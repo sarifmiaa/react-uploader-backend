@@ -31,24 +31,6 @@ Headers: x-upload-id (optional)
 Body: form-data with 'file' field
 ```
 
-### Upload Progress
-```
-GET /api/files/progress/:uploadId
-```
-Get upload progress by upload ID.
-
-### List Files
-```
-GET /api/files/list
-```
-List uploaded files (basic endpoint for future enhancement).
-
-## Supported File Types
-
-- Images: JPEG, PNG, GIF, WebP
-- Documents: PDF, TXT, JSON, CSV
-- Office: Excel, Word documents
-
 ## Development
 
 ```bash
@@ -73,13 +55,6 @@ npm start
 ## File Storage
 
 Files are stored in the `uploads/` directory with unique filenames to prevent conflicts.
-
-## CORS Configuration
-
-Configured to allow requests from:
-- http://localhost:5173 (Vite dev server)
-- http://localhost:3000 (React dev server)
-- http://127.0.0.1:5173
 
 ## Rate Limiting
 
