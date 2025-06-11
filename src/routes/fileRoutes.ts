@@ -54,8 +54,7 @@ router.post('/upload', (req: Request, res: Response, next: NextFunction) => {
         filename: file.filename,
         originalName: file.originalname,
         size: file.size,
-        mimetype: file.mimetype,
-        path: file.path,
+        mimetype: file.mimetype
       },
     });
   });
